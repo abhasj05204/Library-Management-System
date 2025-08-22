@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="my_profile.css" />
+  <script defer src="my_profile.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand">
+      <i class="fas fa-user icon"></i>
+      <div>
+        <h2>My Profile</h2>
+        <span>Library User Details</span>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <a href="demo homepage.html" class="nav-item"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="my_books.html" class="nav-item"><i class="fas fa-book-open"></i><span>My Books</span></a>
+      <div class="nav-item active">
+        <i class="fas fa-user"></i>
+        <span>Profile</span></div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="profile-card">
+      <img src="https://i.imgur.com/2DhmtJ4.png" alt="User" class="avatar">
+      <div class="info">
+        <h2 id="username">Abhas Jaiswal</h2>
+        <p><strong>Roll No:</strong> 220302201234</p>
+        <p><strong>Branch:</strong> AIML</p>
+        <p><strong>Email:</strong> abhas@acropolis.in</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <h3>📊 Library Stats</h3>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h2 id="totalBooks">3</h2>
+          <p>Total Books Issued</p>
+        </div>
+        <div class="stat-box">
+          <h2 id="booksDue">2</h2>
+          <p>Books Currently Due</p>
+        </div>
+        <div class="stat-box">
+          <h2 id="lastIssued">2025-08-30</h2>
+          <p>Last Issued Date</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign_up_page.css">
+</head>
+<body>
+    <div>
+      <h1>Sign up</h1>
+      <form>
+        <label>College E-mail Address</label><br>
+        <input type="text" placeholder="Email Id" required><br>
+
+        <label>Enrollment No.</label>
+        <input type="text" placeholder="Enrollment No." pattern="[A-Za-z0-9]+" required><br>
+
+        <label>Set a New Password</label>
+        <input type="password" placeholder="New Password" required><br>
+
+        <label>*Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" required><br>
+        <div class="footer" align="center">
+          <input type="button" value="Sign Up">
+          <div align="center">
+            <a href="lib_mang2.html" class="nav-item">
+              <span>Log In</span>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="sign_up_page.js"></script>
+</body>
+</html>

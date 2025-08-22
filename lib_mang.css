@@ -1,0 +1,89 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #dee2ff, #c6d0f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+  width: 360px;
+  max-width: 95%;
+}
+
+/* Title */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3f3d56;
+}
+
+/* Input fields */
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.container input[type="text"]:focus,
+.container input[type="password"]:focus {
+  border-color: #5a62d4;
+  outline: none;
+}
+
+/* Buttons */
+.container input[type="submit"],
+.container input[type="reset"],
+.container input[type="button"] {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5a62d4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container input[type="submit"]:hover,
+.container input[type="reset"]:hover,
+.container input[type="button"]:hover {
+  background-color: #3d44b1;
+}
+
+/* Footer section */
+.container .footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container .footer span {
+  color: #555;
+}
+
+.container .footer input[type="button"] {
+  margin-left: 10px;
+  background-color: #00b894;
+}
+
+.container .footer input[type="button"]:hover {
+  background-color: #019875;
+}

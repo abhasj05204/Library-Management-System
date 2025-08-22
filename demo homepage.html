@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acropolis Central Library</title>
+  <link rel="stylesheet" href="demo-homepage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-brand">
+    <i class="fas fa-book icon"></i>
+    <div>
+      <h2>Acropolis</h2>
+      <span>Central Library</span>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <nav class="nav-menu">
+      <div class="nav-item active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </div>
+      <a href="my_books.html" class="nav-item">
+        <i class="fas fa-book-open"></i>
+        <span>My Books</span>
+      </a>
+
+      <a href="my_profile.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="navbar-right">
+    <h3>Select Your Branch</h3>
+    <label for="branch-select">Choose a branch:</label>
+    <select id="branch-select" onchange="goToBranchPage()">
+      <option value="">-- Select Branch --</option>
+      <option value="cse.html">CSE</option>
+      <option value="aiml.html">AIML</option>
+      <option value="it.html">IT</option>
+      <option value="csit.html">CSIT</option>
+      <option value="ds.html">Data Science</option>
+      <option value="cyber.html">Cyber Security</option>
+    </select>
+  </div>
+</header>
+
+<section class="user-greeting">
+  <h2 id="greetingText">Welcome back, Abhas! 👋</h2>
+</section>
+<main class="container">
+  <section class="hero">
+    <h1>Welcome to Acropolis Library</h1>
+    <p>
+      Welcome to the Acropolis Central Library, your gateway to knowledge and resources.<br>
+      Browse our extensive collection of books, journals, and digital resources to support your academic journey.
+    </p>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h2>50,000</h2>
+        <p>Books</p>
+      </div>
+      <div class="stat-box">
+        <h2>15,000</h2>
+        <p>E-Resources</p>
+      </div>
+      <div class="stat-box">
+        <h2>500</h2>
+        <p>Journals</p>
+      </div>
+    </div>
+  </section><br>
+
+  <h2><i>Upcoming events</i></h2>
+
+  <section class="events-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="12.5">
+      📢 Library will be closed on **July 12th** for maintenance |
+      🎉 New books added to the CSE section |
+      📚 Book Fair coming next week! Don’t miss it!
+    </marquee>
+  </section><br>
+  <section class="library-hours">
+    <h3>🕒 Library Hours</h3>
+      <div class="hours-box">
+        <ul>
+          <li><strong>Monday-Friday: </strong> 9:00 AM - 6:00 PM</li>
+          <li><strong>Saturday:</strong> 9:00 AM - 2:00 PM</li>
+          <li><strong>Sunday:</strong> Closed</li>
+          <li><strong>Lunch Break:</strong> 1:00 PM – 1:30 PM</li>
+        </ul>
+      </div>
+  </section>
+
+  <section class="stats-bar">
+  <div class="stat-card">
+    <i class="fas fa-book"></i>
+    <div>
+      <h2>50,000+</h2>
+      <p>Total Books</p>
+    </div>
+  </div>
+
+  <div class="stat-card">
+    <i class="fas fa-user-check"></i>
+    <div>
+      <h2>8,200</h2>
+      <p>Active Users</p>
+    </div>
+  </div>
+
+  <div class="stat-card">
+    <i class="fas fa-book-reader"></i>
+    <div>
+      <h2>320</h2>
+      <p>Books Issued Today</p>
+    </div>
+  </div>
+</section>
+  <section class="new-arrivals">
+    <h3>🆕 New Arrivals</h3>
+    <div class="book-cards">
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10523365-L.jpg" alt="Book 1">
+        <p><strong>Clean Code</strong><br>by Robert C. Martin</p>
+      </div> &nbsp;
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/11146367-L.jpg" alt="Book 2">
+        <p><strong>Atomic Habits</strong><br>by James Clear </p>
+      </div>&nbsp;
+      <div class="book-card">
+        <img src="https://covers.openlibrary.org/b/id/10523887-L.jpg" alt="Book 3">
+        <p><strong>Deep Work</strong><br>by Cal Newport</p>
+      </div>&nbsp;
+      <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/12648922-L.jpg" alt="Book 4">
+      <p><strong>The Pragmatic Programmer</strong><br>by Andrew Hunt</p>
+    </div>&nbsp;
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/10958309-L.jpg" alt="Book 5">
+      <p><strong>Start With Why</strong><br>by Simon Sinek</p>
+    </div>
+    </div>
+  </section>
+</main>
+
+<script src="demo-homepage.js"></script>
+</body>
+</html>

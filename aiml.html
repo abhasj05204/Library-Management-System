@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIML Branch Library</title>
+  <link rel="stylesheet" href="aiml.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />  
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">
+      <i class="fas fa-book icon"></i>
+      <div>
+        <h2>Acropolis</h2>
+        <span>Central Library</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="demo homepage.html" class="nav-item">
+        <i class="fas fa-home"></i><span>Home</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <i class="fas fa-book-open"></i><span>My Books</span>
+      </a>
+      <a href="my_profile.html" class="nav-item">
+        <i class="fas fa-user"></i><span>Profile</span>
+      </a>
+    </nav>
+  </header>
+ 
+  <main>
+    <section>
+    <h2>Welcome to the Book Section <i class="fas fa-book-open" style="margin-left: 10px;"></i></h2>
+      <p>Explore essential titles from core subjects</p>
+    </section>
+
+    <h3><i class="fas fa-robot"></i> Machine Learning</h3>
+    <div class="subject-books">
+      <div class="book-card" onclick="openBookInfo('ml1')">
+        <img src="https://covers.openlibrary.org/b/id/10584357-L.jpg" alt="ML Book 1">
+        <p><strong>Intro to ML</strong></p>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="book-card" onclick="openBookInfo('ml2')">
+          <img src="https://covers.openlibrary.org/b/id/10982865-L.jpg" alt="ML Book 2">
+          <p><strong>Hands-On ML (Scikit-Learn)</strong></p>
+        </div>
+      </div>
+
+    <h3><i class="fas fa-brain"></i> Deep Learning</h3>
+    <div class="subject-books">
+      <div class="book-card" onclick="openBookInfo('dl1')">
+        <img src="https://covers.openlibrary.org/b/id/10909208-L.jpg" alt="DL Book 1">
+        <p><strong>Deep Learning</strong></p>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="book-card" onclick="openBookInfo('dl2')">
+        <img src="https://covers.openlibrary.org/b/id/11032733-L.jpg" alt="DL Book 2">
+        <p><strong>DL with PyTorch</strong></p>
+      </div>
+    </div>
+
+    <h3><i class="fas fa-language"></i> NLP</h3>
+    <div class="subject-books">
+      <div class="book-card" onclick="openBookInfo('nlp1')">
+        <img src="https://covers.openlibrary.org/b/id/10523365-L.jpg" alt="NLP Book 1">
+        <p><strong>Speech & Language Processing</strong></p>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="book-card" onclick="openBookInfo('nlp2')">
+        <img src="https://covers.openlibrary.org/b/id/11146367-L.jpg" alt="NLP Book 2">
+        <p><strong>Practical NLP</strong></p>
+      </div>
+    </div>
+
+    <h3><i class="fas fa-chart-line"></i> Data Science for AI</h3>
+    <div class="subject-books">
+      <div class="book-card" onclick="openBookInfo('ds1')">
+        <img src="https://covers.openlibrary.org/b/id/11119330-L.jpg" alt="DS Book 1">
+        <p><strong>Data Science from Scratch</strong></p>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="book-card" onclick="openBookInfo('ds2')">
+        <img src="https://covers.openlibrary.org/b/id/11027671-L.jpg" alt="DS Book 2">
+        <p><strong>DS with Python</strong></p>
+      </div>
+    </div>
+
+    <h3><i class="fas fa-project-diagram"></i> Neural Networks</h3>
+    <div class="subject-books">
+      <div class="book-card" onclick="openBookInfo('nn1')">
+        <img src="https://covers.openlibrary.org/b/id/11074162-L.jpg" alt="NN Book 1">
+        <p><strong>Neural Networks</strong></p>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="book-card" onclick="openBookInfo('nn2')">
+        <img src="https://covers.openlibrary.org/b/id/11138719-L.jpg" alt="NN Book 2">
+        <p><strong>Neural Networks with TensorFlow</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <div id="book-modal" class="book-modal">
+  <div class="book-modal-content">
+    <span class="close-btn" onclick="closeBookInfo()">&times;</span>
+    <img id="book-cover" src="" alt="Book Cover" />
+    <h3 id="book-title"></h3>
+    <p><strong>Author:</strong> <span id="book-author"></span></p>
+    <p><strong>Description:</strong> <span id="book-description"></span></p>
+    <p><strong>Edition:</strong> <span id="book-edition"></span></p>
+    <p><strong>Price:</strong> ₹<span id="book-price"></span></p>
+    <p><strong>Books Left:</strong> <span id="book-stock"></span></p>
+  </div>
+</div>
+<script src="aiml.js"></script>
+</body>
+</html>

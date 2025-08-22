@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Issued Books</title>
+  <link rel="stylesheet" href="my_books.css" />
+  <script defer src="my_books.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand">
+      <i class="fas fa-book-reader icon"></i>
+      <div class="nav-item">
+        <h2>My Books</h2>
+        <span>Issued Book Overview</span>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <div class="nav-item active">
+        <i class="fas fa-book-open"></i>
+        <span>My Books</span>
+      </div>
+      <a href="demo homepage.html" class="nav-item"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="my_profile.html" class="nav-item"><i class="fas fa-user"></i><span>Profile</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Books Issued to You</h2>
+    <div id="books-list" class="books-list">
+      <!-- JS will populate this -->
+    </div>
+  </main>
+
+</body>
+</html>

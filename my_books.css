@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fbff;
+  color: #222;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-brand h2 {
+  margin: 0;
+  color: #1e3a8a;
+}
+
+.nav-brand span {
+  font-size: 12px;
+  color: #666;
+}
+
+.nav-brand .icon {
+  font-size: 28px;
+  color: #1e3a8a;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-card {
+  background: #fff;
+  border-left: 5px solid #1e3a8a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.book-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+.book-info {
+  font-size: 14px;
+  color: #555;
+  margin-top: 6px;
+}
+
+.status {
+  margin-top: 8px;
+  font-weight: bold;
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.status.due-soon { background: #fff3cd; color: #856404; }
+.status.overdue { background: #f8d7da; color: #721c24; }
+.status.returned { background: #d4edda; color: #155724; }
+
+.nav-item.active {
+  background-color: #eaf6ff;
+  color: #1e3a8a;
+}
